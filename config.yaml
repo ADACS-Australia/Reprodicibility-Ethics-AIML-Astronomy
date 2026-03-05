@@ -66,13 +66,18 @@ contact: 'paul.hancock@curtin.edu.au' # FIXME
 
 # Order of episodes in your lesson
 episodes: 
-- introduction.md
+- motivation.md
+- what-is.md
+- fair-data.md
+- takeaways.md
+- wrap-up.md
 
 # Information for Learners
 learners: 
 
 # Information for Instructors
-instructors: 
+instructors:
+- instructor-notes.md 
 
 # Learner Profiles
 profiles: 

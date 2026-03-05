@@ -1,51 +1,105 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/404.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/404.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/CODE_OF_CONDUCT.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/LICENSE.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/citation.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/aio.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/index.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/citation.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/404.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/fair-data.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/CODE_OF_CONDUCT.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/images.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/LICENSE.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/index.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/citation.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/404.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/index.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/CODE_OF_CONDUCT.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/introduction.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/LICENSE.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/profiles.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/aio.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/instructor/reference.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/citation.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/introduction.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/fair-data.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/profiles.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/images.html</loc>
   </url>
   <url>
-    <loc>https://carpentries.github.io/workbench-template-md/reference.html</loc>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/motivation.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/takeaways.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/what-is.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/wrap-up.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/key-points.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/motivation.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/profiles.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/takeaways.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/what-is.html</loc>
+  </url>
+  <url>
+    <loc>https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/wrap-up.html</loc>
   </url>
 </urlset>

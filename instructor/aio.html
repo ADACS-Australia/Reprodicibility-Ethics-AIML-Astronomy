@@ -250,7 +250,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="motivation.html">1. Using Markdown</a>
+        <a href="motivation.html">1. Why Reproducibility Matters</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -362,56 +362,95 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-motivation"><p>Content from <a href="motivation.html">Using Markdown</a></p>
+<section id="aio-motivation"><p>Content from <a href="motivation.html">Why Reproducibility Matters</a></p>
 <hr>
-<p>Last updated on 2026-03-05 |
+<p>Last updated on 2026-03-06 |
 
         <a href="https://github.com/ADACS-aus/Reprodicibility-Ethics-AIML-Astronomy/edit/main/episodes/motivation.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
 <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
-<section><h2 class="section-heading" id="motivation-why-this-matters-for-astronomers">Motivation: Why this matters for astronomers<a class="anchor" aria-label="anchor" href="#motivation-why-this-matters-for-astronomers"></a>
+<section><h2 class="section-heading" id="motivation-why-should-you-care-about-reproducible-research">Motivation: Why should <em>you</em> care about reproducible
+research?<a class="anchor" aria-label="anchor" href="#motivation-why-should-you-care-about-reproducible-research"></a>
 </h2>
 <hr class="half-width">
+<p>Most astronomers agree that reproducible research is “a good
+thing”.</p>
+<p>Few astronomers change how they work because of it.</p>
+<p>This lesson starts by being honest about <em>why</em> that is — and
+why, despite this, reproducible practices are often <strong>worth it for
+you personally</strong>, especially if you are a PhD student or
+early‑career researcher (ECR).</p>
+<p>We will talk briefly about benefits to science, but we will focus
+mainly on <strong>short‑term, selfish reasons</strong> that tend to
+matter more day‑to‑day.</p>
 <div class="section level3">
-<h3 id="key-points">Key points<a class="anchor" aria-label="anchor" href="#key-points"></a>
+<h3 id="reproducibility-is-not-just-about-being-virtuous">Reproducibility is not (just) about being virtuous<a class="anchor" aria-label="anchor" href="#reproducibility-is-not-just-about-being-virtuous"></a>
 </h3>
+<p>You will often hear that reproducible research is important because
+it:</p>
 <ul>
-<li>ML models are <strong>research outputs</strong>, not just tools</li>
-<li>Non‑reproducible ML results:
+<li>improves trust in science</li>
+<li>allows others to verify your results</li>
+<li>makes research more reliable in the long term</li>
+</ul>
+<p>All of this is true — but for many researchers, these benefits
+feel:</p>
 <ul>
-<li>undermine scientific trust</li>
-<li>break downstream reuse (catalogues, pipelines)</li>
-<li>are hard to diagnose after publication</li>
+<li>distant</li>
+<li>abstract</li>
+<li>misaligned with immediate career pressures</li>
 </ul>
-</li>
-<li>ML amplifies existing issues in astronomy:
-<ul>
-<li>large surveys</li>
-<li>complex pipelines</li>
-<li>long data lifetimes</li>
-</ul>
-</li>
-</ul>
+<p>Sarah Wild, in an <a href="https://physicstoday.aip.org/news/irreproducible-astronomy" class="external-link">article
+for physics today</a> describes the concern many astronomers have around
+reprodicibility and a potential erosion of trust in science. One of the
+issues she points out is that our current publication systems are based
+on “paper and letter” based communication rather than being designed to
+include the publication of data, methodology as code, and results.</p>
+<p>PhDs and ECRs are usually evaluated on: - papers - citations -
+finishing projects on time - surviving supervisor or project changes</p>
+<p>So let’s reframe the question.</p>
+<blockquote>
+<p><strong>What does reproducibility do for <em>you</em>, right
+now?</strong></p>
+</blockquote>
 </div>
 <div class="section level3">
-<h3 id="astronomyspecific-examples-discussion-only">Astronomy‑specific examples (discussion only)<a class="anchor" aria-label="anchor" href="#astronomyspecific-examples-discussion-only"></a>
+<h3 id="selfish-reason-1-reproducibility-saves-you-time">Selfish reason #1: Reproducibility saves <em>you</em> time<a class="anchor" aria-label="anchor" href="#selfish-reason-1-reproducibility-saves-you-time"></a>
 </h3>
-<ul>
-<li>Source classification models reused across surveys</li>
-<li>Photometric redshift models trained once and reused
-indefinitely</li>
-<li>Simulation‑trained models applied to real data</li>
-</ul>
+<p>Many researchers first encounter reproducibility as a burden.</p>
+<p>In practice, the opposite is often true.</p>
+<p>Reproducible <em>workflows</em> make it easier to: - pause and
+restart work after months away - recover from broken laptops or lost
+files - return to a project after a supervisor, postdoc, or collaborator
+leaves - debug your own results</p>
+<p>For PhD students in particular, this matters because: - projects
+routinely span multiple years - interruptions are common (teaching,
+observing, writing, life) - memory is unreliable, documentation is
+not</p>
+<p>A recurring finding in studies of early‑career researchers is that
+reproducible practices <strong>reduce re‑work and dead ends</strong>,
+even when they add a small amount of effort up front.</p>
+<blockquote>
+<p><em>You are the first and most frequent reuser of your own
+code.</em></p>
+</blockquote>
+<div id="quick-discussion" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
 </div>
-<div class="section level3">
-<h3 id="quick-discussion-prompt-optional">Quick discussion prompt (optional)<a class="anchor" aria-label="anchor" href="#quick-discussion-prompt-optional"></a>
-</h3>
+<span class="callout-header">Discussion</span>
+<div id="quick-discussion" class="callout-inner">
+<h3 class="callout-title">Quick discussion</h3>
+<div class="callout-content">
 <blockquote>
 <p>Have you ever failed to reproduce <em>your own</em> ML result after a
 few months?</p>
 </blockquote>
+</div>
+</div>
+</div>
 <div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
@@ -424,14 +463,114 @@ few months?</p>
 </div>
 </div>
 </div>
+</div>
+<div class="section level3">
+<h3 id="selfish-reason-2-reproducible-work-is-easier-to-defend">Selfish reason #2: Reproducible work is easier to defend<a class="anchor" aria-label="anchor" href="#selfish-reason-2-reproducible-work-is-easier-to-defend"></a>
+</h3>
+<p>ML and data‑driven results are increasingly scrutinised
+<em>after</em> publication.</p>
+<p>When your work is questioned, reproducibility acts as protection.</p>
+<p>If you can point to: - versioned code - documented data splits -
+clearly stated assumptions and limitations</p>
+<p>then criticism becomes: - technical, not personal - something you can
+respond to, not panic about</p>
+<p>For PhDs and ECRs, this matters because: - you often have less
+institutional protection - you are more exposed to reviewer and
+community criticism - you may no longer be around when questions
+arise</p>
 <blockquote>
-<p>Machine learning doesn’t create new scientific responsibilities — it
-makes existing ones harder to ignore.</p>
+<p><strong>Reproducibility shifts risk from “who did this?” to “what
+does the evidence show?”</strong></p>
 </blockquote>
-<!--
+</div>
+<div class="section level3">
+<h3 id="selfish-reason-3-reproducible-work-is-cited-more">Selfish reason #3: Reproducible work is cited more<a class="anchor" aria-label="anchor" href="#selfish-reason-3-reproducible-work-is-cited-more"></a>
+</h3>
+<p>This is one of the few incentives with <strong>quantitative
+evidence</strong>.</p>
+<p><a href="https://doi.org/10.1371/journal.pone.0315776" class="external-link">Colavisa et
+al. 2004</a> found that: - the early release of a publication as a
+preprint correlates with a significant positive citation advantage of
+about 20.2%, - sharing data in an online repository correlates with a
+smaller yet still positive citation advantage of 4.3%.</p>
+<p>They did not see a significant citation advantage for papers which
+shared <em>code</em>, but note that “Further research is needed on
+additional or alternative measures of impact beyond citations”.</p>
+<p>This effect has been shown even when controlling for: - journal
+impact - field differences - publication year</p>
+<p>The takeaway is not “do this to game citations”, but:</p>
+<blockquote>
+<p><strong>Visibility and reuse tend to follow clarity and
+accessibility.</strong></p>
+</blockquote>
+<p>It is already normal practice within astronomy to post pre-prints to
+the <a href="https://arxiv.org/" class="external-link">arXiv</a>, and these finding should
+give us confidence that this is a good practice that should be
+continued.</p>
+<p>In a study by <a href="https://physicstoday.aip.org/news/irreproducible-astronomy" class="external-link">Allen
+et al. 2018</a>, papers from 2015 were scanned for citations and links
+to code. Of the 285 unique codes that were used, 58% offered source code
+for download - not a great success rate. However 90% of the hyperlinks
+to code were found to be still working at the time of the study (three
+years post publication). The lead author, Alice Allen, oversees the <a href="https://ascl.net/" class="external-link">Astrophysics Source Code Library</a> which you
+can think of as “an arXiv for code”, and provides a doi and permalink
+for people to cite code.</p>
+</div>
+<div class="section level3">
+<h3 id="what-happens-when-reproducibility-is-missing">What happens when reproducibility is missing?<a class="anchor" aria-label="anchor" href="#what-happens-when-reproducibility-is-missing"></a>
+</h3>
+<p>Reproducibility failures are rarely dramatic at first.</p>
+<p>More often, they look like: - results that “can’t quite be repeated”
+- models that work once but never again - performance that disappears
+when reused elsewhere</p>
+<p>In astronomy and ML‑based science, documented failure modes include:
+- random samples that cannot be regenerated - machine‑learning models
+that rely on subtle data leakage - results that vanish when
+preprocessing is done correctly</p>
+<p>In many published cases: - no fraud was involved - no one acted in
+bad faith - the problem was simply undocumented decisions</p>
+<p>For ECRs, the risk is asymmetric: - the cost of failure is personal
+and immediate - the benefit of cutting corners is often short‑lived</p>
+</div>
+<div class="section level3">
+<h3 id="reproducibility-as-career-insurance">Reproducibility as career insurance<a class="anchor" aria-label="anchor" href="#reproducibility-as-career-insurance"></a>
+</h3>
+<p>It is reasonable to think of reproducibility as a form of
+insurance.</p>
+<p>You invest a small amount of effort: - documenting choices - fixing
+randomness - structuring workflows</p>
+<p>In return, you reduce the chance of: - losing months of work - being
+unable to answer basic questions about your own results - inheriting an
+unfixable mess (or becoming one)</p>
+<blockquote>
+<p><strong>Reproducibility is insurance you pay for up front — instead
+of with stress later.</strong></p>
+</blockquote>
+<div id="take-one-minute-to-think-no-sharing-required" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="take-one-minute-to-think-no-sharing-required" class="callout-inner">
+<h3 class="callout-title">Take one minute to think (no sharing
+required):</h3>
+<div class="callout-content">
+<ul>
+<li>What is one thing in your current workflow that only <em>you</em>
+understand?</li>
+<li>How confident are you that you could rerun your main result in a
+year?</li>
+</ul>
+</div>
+</div>
+</div>
+<blockquote>
+<p><em>“Reproducible research is not about being perfect, it’s about
+making your future life easier.””“</em> <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
+--></p>
+</blockquote>
 </div>
 </section></section><section id="aio-what-is"><p>Content from <a href="what-is.html">Wat do we mean by reproducibility in ML?</a></p>
 <hr>
@@ -565,7 +704,7 @@ workflow that is <strong>not</strong> FAIR</p>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <p>No sharing required — this is reflective, not performative.</p>
 </div>
@@ -731,8 +870,8 @@ any links that you are not going to use.
   "url": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/aio.html",
   "identifier": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/aio.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-03-05",
-  "datePublished": "2026-03-05"
+  "dateModified": "2026-03-06",
+  "datePublished": "2026-03-06"
 }
 
   </script><script>

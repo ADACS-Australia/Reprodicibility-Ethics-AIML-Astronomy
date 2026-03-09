@@ -147,14 +147,29 @@ This activity is intentionally non‑judgmental and reflective.
 ### Reproducibility versus performance in ML papers
 
 In ML‑based science, performance claims are often treated as evidence.
+That is to say, model performance (correlation of output to "known" results) is treated as a proxy for scientific validity (the ability to understand or explain a phenomena).
+This is the classic correlation vs causation confusion.
 
 However, large‑scale reviews have shown that:
-- subtle methodological errors such as data leakage are widespread
+- subtle methodological errors such as data leakage are widespread, leading to an over-reporting of model performance
 - claimed improvements often disappear when analyses are reproduced correctly (e.g [Kapoor and Narayanan, 2023](https://doi.org/10.1016/j.patter.2023.100804))
 
-This is not an argument against ML.
+Performance does not imply physical understanding. 
+A classifier that distinguishes galaxies from stars with high accuracy does not necessarily:
 
+- encode meaningful morphology
+- generalize across surveys
+- respect physical invariants
+
+It may instead exploit:
+
+- PSF differences
+- survey depth artefacts
+- preprocessing quirks
+
+This is not an argument against ML.
 It is an argument for **clear, reproducible evidence** when ML models are used to support scientific claims.
+Reproducible results are easier to interrogate, and lead to a higher confidence in the reported outcomes.
 
 
 ### Key takeaways

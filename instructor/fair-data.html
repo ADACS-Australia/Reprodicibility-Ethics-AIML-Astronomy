@@ -126,11 +126,11 @@
   Reproducibility and Ethics in ML &amp; AI for Astronomy
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 51%" class="percentage">
-    51%
+<aside class="col-md-12 lesson-progress"><div style="width: 42%" class="percentage">
+    42%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 51%" aria-valuenow="51" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 42%" aria-valuenow="42" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -223,7 +223,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="what-is.html">2. Wat do we mean by reproducibility in ML?</a>
+        <a href="what-is.html">2. Wat do we mean by reproducibility?</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -232,12 +232,19 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         3. Data, models, and FAIRness in ML astronomy
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#data-models-and-fair-practices-in-ml-astronomy">Data, models, and FAIR practices in ML astronomy</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -245,7 +252,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="takeaways.html">4. Practical takeaways for astronomers</a>
+        <a href="ethics.html">4. Ethics of ML &amp; AI in astronomy research</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -254,7 +261,16 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="wrap-up.html">5. Wrap‑up and next steps</a>
+        <a href="takeaways.html">5. Practical takeaways for astronomers</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="wrap-up.html">6. Wrap‑up and next steps</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -303,7 +319,7 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/what-is.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/takeaways.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/ethics.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -311,89 +327,196 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Wat do we mean by
         </a>
-        <a class="chapter-link float-end" href="../instructor/takeaways.html" rel="next">
-          Next: Practical takeaways...
+        <a class="chapter-link float-end" href="../instructor/ethics.html" rel="next">
+          Next: Ethics of ML &amp; AI in...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Data, models, and FAIRness in ML astronomy</h1>
-        <p>Last updated on 2026-03-05 |
+        <p>Last updated on 2026-03-10 |
 
         <a href="https://github.com/ADACS-aus/Reprodicibility-Ethics-AIML-Astronomy/edit/main/episodes/fair-data.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 25 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
 
         
-<div class="section level1">
-<h1 id="data-models-and-fairness-in-ml-astronomy-10-min">3. Data, models, and FAIRness in ML astronomy (10 min)<a class="anchor" aria-label="anchor" href="#data-models-and-fairness-in-ml-astronomy-10-min"></a></h1>
+<section><h2 class="section-heading" id="data-models-and-fair-practices-in-ml-astronomy">Data, models, and FAIR practices in ML astronomy<a class="anchor" aria-label="anchor" href="#data-models-and-fair-practices-in-ml-astronomy"></a></h2>
+<hr class="half-width"><p>Machine learning workflows in astronomy produce more than papers.
+They produce:</p>
+<ul><li>training datasets</li>
+<li>labels and annotations</li>
+<li>trained models</li>
+<li>derived catalogues</li>
+<li>complex preprocessing pipelines</li>
+</ul><p>If these outputs are not shared in a FAIR way, ML results become
+difficult or impossible to reuse, validate, or build upon.</p>
+<p>This section focuses specifically on <strong>FAIR data and model
+sharing practices</strong>, and how they apply to ML‑based
+astronomy.</p>
 <div class="section level3">
-<h3 id="fair-principles-recap-very-brief">FAIR principles recap (very brief)<a class="anchor" aria-label="anchor" href="#fair-principles-recap-very-brief"></a></h3>
+<h3 id="what-does-fair-mean-in-astronomy">What does FAIR mean in astronomy?<a class="anchor" aria-label="anchor" href="#what-does-fair-mean-in-astronomy"></a></h3>
+<p>FAIR stands for:</p>
 <ul><li><strong>Findable</strong></li>
 <li><strong>Accessible</strong></li>
 <li><strong>Interoperable</strong></li>
 <li><strong>Reusable</strong></li>
-</ul><blockquote>
-<p>Important: FAIR ≠ open<br>
-FAIR = reusable <em>by humans and machines</em></p>
-</blockquote>
+</ul><p>The FAIR principles were introduced by <a href="https://doi.org/10.1038/s41597-019-0009-6" class="external-link">Wilkinson et
+al. (2016)</a> and are now widely adopted across scientific domains. In
+astronomy, FAIR has a concrete and well‑established interpretation
+through:</p>
+<ul><li>Virtual Observatory infrastructure</li>
+<li>IVOA standards</li>
+<li>long‑lived data archives</li>
+</ul><p>An overview of how FAIR maps onto astronomical practice is given by
+<a href="https://arxiv.org/abs/2203.10710" class="external-link">O’Toole and Tocknell
+(2022)</a>.</p>
+<p>Summary: <strong>FAIR is about making research outputs usable by
+humans and machines.</strong></p>
 </div>
 <div class="section level3">
-<h3 id="applying-fair-to-ml-not-just-data">Applying FAIR to ML (not just data)<a class="anchor" aria-label="anchor" href="#applying-fair-to-ml-not-just-data"></a></h3>
-<p>In astronomy ML, FAIR should apply to: - Training data - Labels and
-annotations - Feature engineering steps - Trained models - Derived
-catalogues</p>
+<h3 id="astronomy-is-close-to-fair-by-default">Astronomy is close to FAIR by default<a class="anchor" aria-label="anchor" href="#astronomy-is-close-to-fair-by-default"></a></h3>
+<p>Astronomy is often described as “world‑leading” in data stewardship.
+This is largely true because:</p>
+<ul><li>most survey data are archived</li>
+<li>metadata standards are well developed</li>
+<li>access is usually long‑term</li>
+</ul><p>IVOA standards were, in practice, implementing FAIR‑like ideas before
+the FAIR principles were formally articulated. As a result:</p>
+<ul><li>raw observational data are often FAIR</li>
+<li>catalogues linked to publications are often FAIR</li>
+<li>archive‑level metadata is usually strong</li>
+</ul><p>However, ML workflows introduce <strong>new outputs that are often
+not FAIR</strong>.</p>
 </div>
 <div class="section level3">
-<h3 id="where-astronomy-does-well">Where astronomy does well<a class="anchor" aria-label="anchor" href="#where-astronomy-does-well"></a></h3>
-<ul><li>Archives and long‑term stewardship</li>
-<li>Community standards (e.g. IVOA)</li>
-<li>Culture of reuse</li>
-</ul></div>
+<h3 id="where-ml-workflows-break-fairness">Where ML workflows break FAIRness<a class="anchor" aria-label="anchor" href="#where-ml-workflows-break-fairness"></a></h3>
+<p>In ML‑based astronomy, FAIR failures usually occur downstream of the
+archive. Common examples include:</p>
+<ul><li>private training sets derived from public data</li>
+<li>labels created by individuals and never shared</li>
+<li>preprocessing scripts that are undocumented</li>
+<li>trained models released without context</li>
+<li>catalogues published without provenance</li>
+</ul><p>These issues are explicitly identified in FAIR guidance for
+astronomy, which emphasises that <strong>provenance, processing history,
+and metadata are essential for reuse</strong> (<a href="https://arxiv.org/abs/2203.10710" class="external-link">O’Toole and Tocknell,
+2022</a>).</p>
+<p>Remember: <strong>FAIR does not stop at the telescope. It extends
+through the full analysis pipeline.</strong></p>
+</div>
 <div class="section level3">
-<h3 id="where-ml-breaks-the-chain">Where ML breaks the chain<a class="anchor" aria-label="anchor" href="#where-ml-breaks-the-chain"></a></h3>
-<ul><li>Private or undocumented labels</li>
-<li>One‑off preprocessing scripts</li>
-<li>Models shared without training context</li>
-<li>Missing provenance for derived products</li>
-</ul></div>
+<h3 id="fair-applies-to-models-not-just-data">FAIR applies to models, not just data<a class="anchor" aria-label="anchor" href="#fair-applies-to-models-not-just-data"></a></h3>
+<p>A common misconception is that FAIR applies only to raw data. In ML
+astronomy, FAIR should apply to:</p>
+<ul><li>training datasets</li>
+<li>labels and annotations</li>
+<li>feature representations</li>
+<li>trained models</li>
+<li>evaluation datasets</li>
+</ul><p>If a trained model is shared without:</p>
+<ul><li>its training data description</li>
+<li>preprocessing steps</li>
+<li>intended scope</li>
+</ul><p>then it is not reusable, even if the model file itself is
+available.</p>
+<p>This point is emphasised in astronomy‑focused FAIR discussions, which
+note that <strong>machine‑actionable reuse requires rich metadata and
+provenance</strong>, not just file access (<a href="https://ci-compass.org/assets/464624/applicationoffairprinciplesinastronomygbruceberriman.pdf" class="external-link">Berriman,
+2022</a>).</p>
+<div id="is-your-ml-output-fair" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="is-your-ml-output-fair" class="callout-inner">
+<h3 class="callout-title">Is your ML output FAIR?</h3>
+<div class="callout-content">
+<p>Think about one ML artefact you have produced or used. For that
+artefact, ask:</p>
+<ul><li>Can someone find it?</li>
+<li>Can they access it?</li>
+<li>Can they understand what it expects as input?</li>
+<li>Can they reuse it without asking you questions?</li>
+</ul><p>Write down one missing piece of information.</p>
+<p>No sharing required.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="section level3">
-<h3 id="short-activity-optional">Short activity (optional)<a class="anchor" aria-label="anchor" href="#short-activity-optional"></a></h3>
-<p>Ask learners to silently identify: - One thing in their current ML
-workflow that is <strong>not</strong> FAIR</p>
-<div id="accordionInstructor1" class="accordion instructor-note accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
-  <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
-</button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
-<div class="accordion-body">
-<p>No sharing required — this is reflective, not performative.</p>
+<h3 id="fair-does-not-mean-open-at-all-costs">FAIR does not mean open at all costs<a class="anchor" aria-label="anchor" href="#fair-does-not-mean-open-at-all-costs"></a></h3>
+<p>Another common misconception is that FAIR means “everything must be
+open”. This is not true. FAIR explicitly allows for:</p>
+<ul><li>access controls</li>
+<li>embargo periods</li>
+<li>restricted data</li>
+</ul><p>The requirement is not openness, but <strong>clarity</strong>:</p>
+<ul><li>how the data can be accessed</li>
+<li>under what conditions</li>
+<li>with what limitations</li>
+</ul><p>FAIR guidance for astronomy explicitly separates:</p>
+<ul><li>openness (a policy choice)</li>
+<li>FAIRness (a technical and metadata choice)</li>
+</ul><p><strong>Data can be FAIR without being fully open.</strong></p>
+</div>
+<div class="section level3">
+<h3 id="why-fair-matters-for-ml-reuse">Why FAIR matters for ML reuse<a class="anchor" aria-label="anchor" href="#why-fair-matters-for-ml-reuse"></a></h3>
+<p>ML outputs are frequently reused:</p>
+<ul><li>by collaborators</li>
+<li>by downstream projects</li>
+<li>by future surveys</li>
+</ul><p>If ML artefacts are not FAIR:</p>
+<ul><li>reuse requires personal communication</li>
+<li>validation becomes difficult</li>
+<li>results quietly decay over time</li>
+</ul><p>FAIR practices reduce this fragility by:</p>
+<ul><li>making assumptions explicit</li>
+<li>preserving provenance</li>
+<li>supporting long‑term reuse</li>
+</ul><p>This is especially important in astronomy, where datasets often
+outlive individual projects and researchers.</p>
+<div id="one-fair-improvement" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="one-fair-improvement" class="callout-inner">
+<h3 class="callout-title">One FAIR improvement</h3>
+<div class="callout-content">
+<p>Identify one concrete change you could make to improve FAIRness:</p>
+<ul><li>a README</li>
+<li>a data dictionary</li>
+<li>a provenance note</li>
+<li>a model description</li>
+</ul><p>Write it down.</p>
+<p>That is enough for now.</p>
 </div>
 </div>
 </div>
 </div>
-<blockquote>
-<p>Astronomy is already close to FAIR by design — ML is where the cracks
-show. <!--
+<div class="section level3">
+<h3 id="key-takeaways">Key takeaways<a class="anchor" aria-label="anchor" href="#key-takeaways"></a></h3>
+<ul><li>FAIR applies to data, models, and derived products</li>
+<li>Astronomy infrastructure already supports FAIR principles</li>
+<li>ML workflows often fall outside existing FAIR practices</li>
+<li>Small documentation steps dramatically improve reuse</li>
+</ul><p>Thought: <strong>“If your ML result cannot be reused without emailing
+you, it is not FAIR yet.”</strong> <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
---></p>
-</blockquote>
+ --></p>
 </div>
-</div>
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/what-is.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="../instructor/takeaways.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="../instructor/ethics.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -401,8 +524,8 @@ any links that you are not going to use.
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Wat do we mean by
         </a>
-        <a class="chapter-link float-end" href="../instructor/takeaways.html" rel="next">
-          Next: Practical takeaways...
+        <a class="chapter-link float-end" href="../instructor/ethics.html" rel="next">
+          Next: Ethics of ML &amp; AI in...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -453,8 +576,8 @@ any links that you are not going to use.
   "url": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/fair-data.html",
   "identifier": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/fair-data.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-03-05",
-  "datePublished": "2026-03-06"
+  "dateModified": "2026-03-10",
+  "datePublished": "2026-03-10"
 }
 
   </script><script>

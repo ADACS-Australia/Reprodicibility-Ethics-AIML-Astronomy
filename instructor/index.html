@@ -215,7 +215,10 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#lesson-overview">Lesson overview</a></li>
+        <ul><li><a href="#workshop-overview">Workshop overview</a></li>
+<li><a href="#assumed-background-and-skills">Assumed background and skills</a></li>
+<li><a href="#who-this-workshop-is-for">Who this workshop is for</a></li>
+<li><a href="#what-you-should-expect-to-take-away">What you should expect to take away</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -234,7 +237,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="what-is.html">2. Wat do we mean by reproducibility in ML?</a>
+        <a href="what-is.html">2. Wat do we mean by reproducibility?</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -252,7 +255,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="takeaways.html">4. Practical takeaways for astronomers</a>
+        <a href="ethics.html">4. Ethics of ML &amp; AI in astronomy research</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -261,7 +264,16 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="wrap-up.html">5. Wrap‑up and next steps</a>
+        <a href="takeaways.html">5. Practical takeaways for astronomers</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush7">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading7">
+        <a href="wrap-up.html">6. Wrap‑up and next steps</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -317,23 +329,66 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><h1 class="schedule-heading">Summary and Schedule</h1>
       
-<section><h2 class="section-heading" id="lesson-overview">Lesson overview<a class="anchor" aria-label="anchor" href="#lesson-overview"></a></h2>
-<hr class="half-width"><ul><li>
-<strong>Audience:</strong> Astronomers using (or planning to use)
-ML/AI in research<br></li>
-<li>
-<strong>Level:</strong> Introductory / cross‑career<br></li>
-<li>
-<strong>Estimated time:</strong> ~45 minutes total<br></li>
-<li>
-<strong>Format:</strong> Discussion + short activities (no live
-coding)</li>
-</ul><p><strong>Learning objectives:</strong> - Understand what
-reproducibility means <em>specifically</em> for ML in astronomy -
-Identify common reproducibility failure modes in ML workflows -
-Recognise ethical risks specific to ML/AI in astronomy research - Apply
-practical, lightweight practices to improve reproducibility and ethical
-use</p>
+
+<section><h2 class="section-heading" id="workshop-overview">Workshop overview<a class="anchor" aria-label="anchor" href="#workshop-overview"></a></h2>
+<hr class="half-width"><p>Machine learning and AI are now routine tools in astronomy. They are
+used to classify objects, generate catalogues, estimate physical
+parameters, and prioritise observations across increasingly large and
+complex datasets.</p>
+<p>This workshop focuses on how to use these tools <strong>responsibly,
+reproducibly, and transparently</strong> in a research context. Rather
+than teaching ML techniques themselves, the emphasis is on how ML fits
+into the broader scientific workflow: how results are produced,
+documented, reused, and interpreted over time.</p>
+<p>The intent of the workshop is practical. It aims to help participants
+recognise common failure modes in ML‑based astronomy, understand how
+reproducibility and FAIR practices apply to data and models, and adopt
+lightweight habits that make their work easier to validate, defend, and
+reuse. Ethical issues are discussed in terms of scientific
+responsibility, scope control, and downstream reuse, rather than policy
+or regulation.</p>
+<p>This workshop is designed to be discussion‑driven and reflective.
+Participants are encouraged to think about their own projects and
+workflows, rather than aiming for idealised or perfect practice.</p>
+</section><section><h2 class="section-heading" id="assumed-background-and-skills">Assumed background and skills<a class="anchor" aria-label="anchor" href="#assumed-background-and-skills"></a></h2>
+<hr class="half-width"><p>This workshop assumes that participants:</p>
+<ul><li>are familiar with basic astronomical data analysis</li>
+<li>have some exposure to machine learning or AI methods, either through
+use or collaboration</li>
+<li>have experience working with real survey or simulation data</li>
+</ul><p>No prior knowledge of: - formal research ethics frameworks - FAIR
+data principles - software engineering best practices</p>
+<p>is assumed.</p>
+<p>The workshop does <strong>not</strong> teach:</p>
+<ul><li>how to build ML models</li>
+<li>specific ML algorithms or libraries</li>
+<li>advanced software tooling</li>
+</ul><p>Instead, it focuses on the decisions and documentation that sit
+around ML use in astronomy research.</p>
+</section><section><h2 class="section-heading" id="who-this-workshop-is-for">Who this workshop is for<a class="anchor" aria-label="anchor" href="#who-this-workshop-is-for"></a></h2>
+<hr class="half-width"><p>This material is particularly aimed at:</p>
+<ul><li>PhD students using ML or AI in their research</li>
+<li>early‑career researchers working with ML‑derived results</li>
+<li>astronomers collaborating with data scientists or ML
+specialists</li>
+<li>researchers preparing ML‑based results for publication or reuse</li>
+</ul><p>The examples and activities are drawn from astronomy research
+contexts and are intended to be directly applicable to real
+projects.</p>
+</section><section><h2 class="section-heading" id="what-you-should-expect-to-take-away">What you should expect to take away<a class="anchor" aria-label="anchor" href="#what-you-should-expect-to-take-away"></a></h2>
+<hr class="half-width"><p>By the end of the workshop, participants should be able to:</p>
+<ul><li>articulate what reproducibility means in ML‑based astronomy</li>
+<li>recognise where ML workflows commonly break reproducibility and FAIR
+practices</li>
+<li>identify ethical risks related to scope, reuse, and
+over‑interpretation</li>
+<li>apply a small set of practical actions to improve their own
+workflows</li>
+</ul><p>You should leave with a clearer sense of what is reasonable to do
+now, and what can be improved incrementally over time.</p>
+<p><strong>This workshop is not about doing everything right. It is
+about making ML‑based astronomy easier to trust, reuse, and
+understand.</strong>”**</p>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
@@ -351,12 +406,12 @@ any links that you are not going to use.
 <span class="visually-hidden">Duration: </span>00h 25m
 </td>
 <td>
- 2. <a href="what-is.html">Wat do we mean by reproducibility in ML?</a>
+ 2. <a href="what-is.html">Wat do we mean by reproducibility?</a>
 </td>
 <td>
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 37m
+<span class="visually-hidden">Duration: </span>00h 50m
 </td>
 <td>
  3. <a href="fair-data.html">Data, models, and FAIRness in ML
@@ -365,23 +420,32 @@ astronomy</a>
 <td>
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>00h 49m
+<span class="visually-hidden">Duration: </span>01h 15m
 </td>
 <td>
- 4. <a href="takeaways.html">Practical takeaways for astronomers</a>
-</td>
-<td>
-</td>
-</tr><tr><td>
-<span class="visually-hidden">Duration: </span>01h 01m
-</td>
-<td>
- 5. <a href="wrap-up.html">Wrap‑up and next steps</a>
+ 4. <a href="ethics.html">Ethics of ML &amp; AI in astronomy
+research</a>
 </td>
 <td>
 </td>
 </tr><tr><td>
-<span class="visually-hidden">Duration: </span>01h 13m
+<span class="visually-hidden">Duration: </span>01h 27m
+</td>
+<td>
+ 5. <a href="takeaways.html">Practical takeaways for astronomers</a>
+</td>
+<td>
+</td>
+</tr><tr><td>
+<span class="visually-hidden">Duration: </span>01h 39m
+</td>
+<td>
+ 6. <a href="wrap-up.html">Wrap‑up and next steps</a>
+</td>
+<td>
+</td>
+</tr><tr><td>
+<span class="visually-hidden">Duration: </span>01h 59m
 </td>
 <td>
 Finish
@@ -523,8 +587,8 @@ any links that you are not going to use.
   "url": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/index.html",
   "identifier": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/index.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-03-06",
-  "datePublished": "2026-03-06"
+  "dateModified": "2026-03-10",
+  "datePublished": "2026-03-10"
 }
 
   </script><script>

@@ -126,11 +126,11 @@
   Reproducibility and Ethics in ML &amp; AI for Astronomy
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 67%" class="percentage">
-    67%
+<aside class="col-md-12 lesson-progress"><div style="width: 73%" class="percentage">
+    73%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 67%" aria-valuenow="67" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 73%" aria-valuenow="73" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -223,7 +223,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="what-is.html">2. Wat do we mean by reproducibility in ML?</a>
+        <a href="what-is.html">2. Wat do we mean by reproducibility?</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -238,13 +238,22 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush5">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading5">
+        <a href="ethics.html">4. Ethics of ML &amp; AI in astronomy research</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        4. Practical takeaways for astronomers
+        5. Practical takeaways for astronomers
         </span>
       </button>
     </div><!--/div.accordion-header-->
@@ -258,10 +267,10 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
-<div class="accordion accordion-flush" id="accordionFlush6">
+<div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
-    <div class="accordion-header" id="flush-heading6">
-        <a href="wrap-up.html">5. Wrap‑up and next steps</a>
+    <div class="accordion-header" id="flush-heading7">
+        <a href="wrap-up.html">6. Wrap‑up and next steps</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -309,14 +318,14 @@
         <!-- START: inst/pkgdown/templates/content-instructor.html -->
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="fair-data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link" href="ethics.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="wrap-up.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="fair-data.html" rel="prev">
+        <a class="chapter-link" href="ethics.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: Data, models, and
+          Previous: Ethics of ML &amp; AI in
         </a>
         <a class="chapter-link float-end" href="wrap-up.html" rel="next">
           Next: Wrap‑up and next...
@@ -325,7 +334,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Practical takeaways for astronomers</h1>
-        <p>Last updated on 2026-03-05 |
+        <p>Last updated on 2026-03-10 |
 
         <a href="https://github.com/ADACS-aus/Reprodicibility-Ethics-AIML-Astronomy/edit/main/episodes/takeaways.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -337,51 +346,182 @@
 
         
 <section><h2 class="section-heading" id="practical-takeaways-for-astronomers">Practical takeaways for astronomers<a class="anchor" aria-label="anchor" href="#practical-takeaways-for-astronomers"></a></h2>
-<hr class="half-width"><div class="section level3">
-<h3 id="a-minimum-reproducibility-bar-for-ml-projects">A minimum reproducibility bar for ML projects<a class="anchor" aria-label="anchor" href="#a-minimum-reproducibility-bar-for-ml-projects"></a></h3>
-<p>Encourage learners to aim for: - Versioned code - Fixed random seeds
-(documented) - Explicit data splits - Environment description - Clear
-statement of limitations</p>
+<hr class="half-width"><p>Reproducibility, FAIR practices, and ethical ML use can feel abstract
+until they are translated into concrete actions. This section focuses on
+<strong>practical minimum standards</strong> that astronomers can apply
+immediately, without rewriting their entire workflow or becoming
+software engineers. The goal is not perfection. The goal is for our work
+to be clear, honest, and reusable <em>enough</em>.</p>
+<div class="section level3">
+<h3 id="a-minimum-reproducibility-standard-for-ml-projects">A minimum reproducibility standard for ML projects<a class="anchor" aria-label="anchor" href="#a-minimum-reproducibility-standard-for-ml-projects"></a></h3>
+<p>For most astronomy ML projects, a reasonable minimum standard is
+that:</p>
+<ul><li>you can rerun your own main result</li>
+<li>someone else could rerun it with effort, but without guessing</li>
+<li>limitations are stated explicitly</li>
+</ul><p>In practice, this usually means having:</p>
+<ul><li>versioned code</li>
+<li>fixed or recorded randomness</li>
+<li>explicit data splits</li>
+<li>documented preprocessing</li>
+<li>a short description of scope and limitations</li>
+</ul><p><strong>Anything beyond this is a bonus.</strong></p>
 </div>
 <div class="section level3">
-<h3 id="when-full-openness-isnt-possible">When full openness isn’t possible<a class="anchor" aria-label="anchor" href="#when-full-openness-isnt-possible"></a></h3>
-<ul><li>You can still:
-<ul><li>describe data access conditions</li>
-<li>document preprocessing</li>
-<li>share model cards or summaries</li>
-<li>state intended use explicitly</li>
+<h3 id="what-to-document-even-if-you-share-nothing-else">What to document (even if you share nothing else)<a class="anchor" aria-label="anchor" href="#what-to-document-even-if-you-share-nothing-else"></a></h3>
+<p>If you only document a few things, make them these:</p>
+<ul><li>
+<strong>Data provenance</strong>
+<ul><li>Where the data came from, including archive, release, and selection
+criteria.</li>
 </ul></li>
-</ul></div>
+<li>
+<strong>Preprocessing steps</strong>
+<ul><li>What was done to the data before training, especially filtering,
+scaling, and feature construction.</li>
+</ul></li>
+<li>
+<strong>Randomness</strong>
+<ul><li>Whether results depend on random seeds, and whether those seeds were
+fixed.</li>
+</ul></li>
+<li>
+<strong>Model scope</strong>
+<ul><li>What the model was designed to do, and where it was not tested.</li>
+</ul></li>
+</ul><p>This information is often more important than hyperparameter
+details.</p>
+<p>Rule of thumb: <strong>Documentation that answers questions is more
+useful than documentation that looks complete.</strong></p>
+</div>
 <div class="section level3">
-<h3 id="language-to-encourage">Language to encourage<a class="anchor" aria-label="anchor" href="#language-to-encourage"></a></h3>
-<ul><li>“Exploratory result”</li>
-<li>“Model valid within this domain”</li>
-<li>“Performance not tested beyond…”</li>
-</ul></div>
+<h3 id="fair-does-not-require-new-infrastructure">FAIR does not require new infrastructure<a class="anchor" aria-label="anchor" href="#fair-does-not-require-new-infrastructure"></a></h3>
+<p>Many astronomers assume FAIR practices require:</p>
+<ul><li>specialised repositories</li>
+<li>complex metadata schemas</li>
+<li>institutional support</li>
+</ul><p>In reality, small steps already help a lot. For example:</p>
+<ul><li>a README.md in a Git repository</li>
+<li>a data dictionary for derived features</li>
+<li>a short “how to reproduce Figure 3” note</li>
+<li>a model description paragraph in the paper</li>
+</ul><p>FAIRness improves through <strong>clarity</strong>, not tooling.</p>
+<div id="the-fiveminute-readme" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="the-fiveminute-readme" class="callout-inner">
+<h3 class="callout-title">The five‑minute README</h3>
+<div class="callout-content">
+<p>Imagine someone opens your project folder in a year. Write down the
+headings of a README that would help them.</p>
+<p>For example:</p>
+<ul><li>What this project does</li>
+<li>Where the data came from</li>
+<li>How to rerun the main result</li>
+<li>Known limitations</li>
+</ul><p>You do not need to write the content now.</p>
+<p>Just the headings are enough.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="section level3">
-<h3 id="role-of-adacs">Role of ADACS<a class="anchor" aria-label="anchor" href="#role-of-adacs"></a></h3>
-<ul><li>Training and best practice guidance</li>
-<li>Support for sustainable software</li>
-<li>Community norms for ML use</li>
-</ul><blockquote>
-<p>Good ML ethics is mostly good scientific hygiene — ML just raises the
-stakes.</p>
-</blockquote>
-<!--
+<h3 id="how-to-be-ethically-careful-without-being-defensive">How to be ethically careful without being defensive<a class="anchor" aria-label="anchor" href="#how-to-be-ethically-careful-without-being-defensive"></a></h3>
+<p>Ethical ML practice in astronomy does not require disclaimers
+everywhere.</p>
+<p>It requires:</p>
+<ul><li>stating assumptions</li>
+<li>stating limits</li>
+<li>avoiding implied generality</li>
+</ul><p>Helpful phrases include:</p>
+<ul><li>“This model was trained on…”</li>
+<li>“Performance was evaluated only on…”</li>
+<li>“We did not test…”</li>
+<li>“Results should not be interpreted as…”</li>
+</ul><p>These are not weaknesses. They are signals of careful science.</p>
+</div>
+<div class="section level3">
+<h3 id="when-full-openness-is-not-possible">When full openness is not possible<a class="anchor" aria-label="anchor" href="#when-full-openness-is-not-possible"></a></h3>
+<p>Sometimes you cannot share:</p>
+<ul><li>proprietary data</li>
+<li>sensitive observations</li>
+<li>intermediate products</li>
+<li>large files</li>
+</ul><p>This does not prevent reproducibility or FAIR alignment. You can
+still:</p>
+<ul><li>describe access conditions</li>
+<li>share code without data</li>
+<li>provide synthetic examples</li>
+<li>document the full workflow</li>
+</ul><p>Silence is the only irreproducible option.</p>
+</div>
+<div class="section level3">
+<h3 id="reuse-is-where-most-harm-and-benefit-happens">Reuse is where most harm (and benefit) happens<a class="anchor" aria-label="anchor" href="#reuse-is-where-most-harm-and-benefit-happens"></a></h3>
+<p>Most problems arise <em>after</em> publication, when:</p>
+<ul><li>models are reused on new surveys</li>
+<li>catalogues are taken as ground truth</li>
+<li>assumptions are forgotten</li>
+</ul><p>You cannot control all reuse.</p>
+<p>You can influence it by:</p>
+<ul><li>writing clear limitations</li>
+<li>choosing careful language</li>
+<li>making uncertainty visible</li>
+</ul><p>This protects both downstream users and your future self.</p>
+<div id="one-concrete-improvement" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="one-concrete-improvement" class="callout-inner">
+<h3 class="callout-title">One concrete improvement</h3>
+<div class="callout-content">
+<p>Think about your current or next project.</p>
+<p>Identify one thing you could improve:</p>
+<ul><li>a clearer scope statement</li>
+<li>a fixed random seed</li>
+<li>a short README</li>
+<li>a note on reuse limitations</li>
+</ul><p>Write it down. Do not optimise it. Just commit to doing that one
+thing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="a-sustainable-mindset">A sustainable mindset<a class="anchor" aria-label="anchor" href="#a-sustainable-mindset"></a></h3>
+<p>Good practice accumulates.</p>
+<p>Most reproducible and ethical ML workflows were not built all at
+once.</p>
+<p>They evolved because:</p>
+<ul><li>small habits stuck</li>
+<li>mistakes were documented</li>
+<li>clarity was rewarded</li>
+</ul><p>Progress is incremental.</p>
+</div>
+<div class="section level3">
+<h3 id="key-takeaways">Key takeaways<a class="anchor" aria-label="anchor" href="#key-takeaways"></a></h3>
+<ul><li>Aim for a clear minimum standard, not perfection</li>
+<li>Document decisions that affect results</li>
+<li>Make scope and limitations explicit</li>
+<li>Small improvements compound over time</li>
+</ul><p>Remember: <strong>Good (ML) practice is not about doing everything
+right. It is about making fewer things mysterious.</strong> `` <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
+ --></p>
 </div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
-        <a class="chapter-link" href="fair-data.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
+        <a class="chapter-link" href="ethics.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="wrap-up.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
-        <a class="chapter-link" href="fair-data.html" rel="prev">
+        <a class="chapter-link" href="ethics.html" rel="prev">
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
-          Previous: Data, models, and
+          Previous: Ethics of ML &amp; AI in
         </a>
         <a class="chapter-link float-end" href="wrap-up.html" rel="next">
           Next: Wrap‑up and next...
@@ -435,8 +575,8 @@ any links that you are not going to use.
   "url": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/takeaways.html",
   "identifier": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/takeaways.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-03-05",
-  "datePublished": "2026-03-06"
+  "dateModified": "2026-03-10",
+  "datePublished": "2026-03-10"
 }
 
   </script><script>

@@ -126,11 +126,11 @@
   Reproducibility and Ethics in ML &amp; AI for Astronomy
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 84%" class="percentage">
-    84%
+<aside class="col-md-12 lesson-progress"><div style="width: 83%" class="percentage">
+    83%
   </div>
   <div class="progress software">
-    <div class="progress-bar software" role="progressbar" style="width: 84%" aria-valuenow="84" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar software" role="progressbar" style="width: 83%" aria-valuenow="83" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -223,7 +223,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="what-is.html">2. Wat do we mean by reproducibility in ML?</a>
+        <a href="what-is.html">2. Wat do we mean by reproducibility?</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -241,7 +241,16 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="takeaways.html">4. Practical takeaways for astronomers</a>
+        <a href="ethics.html">4. Ethics of ML &amp; AI in astronomy research</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="takeaways.html">5. Practical takeaways for astronomers</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -253,14 +262,16 @@
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
-        5. Wrap‑up and next steps
+        6. Wrap‑up and next steps
         </span>
       </button>
     </div><!--/div.accordion-header-->
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#wrapup-and-next-steps">Wrap‑up and next steps</a></li>
+        <ul><li><a href="#onepage-checklist-reproducible-fair-and-ethical-ml-in-astronomy">One‑page checklist: Reproducible, FAIR, and ethical ML in
+astronomy</a></li>
+<li><a href="#wrapup-and-next-steps">Wrap‑up and next steps</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -325,37 +336,188 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Wrap‑up and next steps</h1>
-        <p>Last updated on 2026-03-05 |
+        <p>Last updated on 2026-03-10 |
 
         <a href="https://github.com/ADACS-aus/Reprodicibility-Ethics-AIML-Astronomy/edit/main/episodes/wrap-up.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
-        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 12 minutes</p>
+        <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 20 minutes</p>
 
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
 
         
-<section><h2 class="section-heading" id="wrapup-and-next-steps">Wrap‑up and next steps<a class="anchor" aria-label="anchor" href="#wrapup-and-next-steps"></a></h2>
-<hr class="half-width"><div class="section level3">
-<h3 id="key-messages-to-reinforce">Key messages to reinforce<a class="anchor" aria-label="anchor" href="#key-messages-to-reinforce"></a></h3>
-<ul><li>Reproducibility is a <em>process</em>, not a checkbox</li>
-<li>Ethics is about downstream impact, not intent</li>
-<li>Small improvements compound over time</li>
-</ul></div>
+
+<section><h2 class="section-heading" id="onepage-checklist-reproducible-fair-and-ethical-ml-in-astronomy">One‑page checklist: Reproducible, FAIR, and ethical ML in
+astronomy<a class="anchor" aria-label="anchor" href="#onepage-checklist-reproducible-fair-and-ethical-ml-in-astronomy"></a></h2>
+<hr class="half-width"><p>Use this as a quick self‑check for your next ML project.<br>
+You do not need to tick every box to start.<br>
+Ticking a few is already progress.</p>
 <div class="section level3">
-<h3 id="todo-future-extensions">TODO (future extensions)<a class="anchor" aria-label="anchor" href="#todo-future-extensions"></a></h3>
-<ul><li>Add a hands‑on follow‑up lesson:
-<ul><li>Reproducible ML project structure</li>
-<li>Model documentation (“model cards” for astronomy)</li>
-</ul></li>
-<li>Link to ADACS-supported tools and examples</li>
-</ul><!--
+<h3 id="reproducibility-can-someone-rerun-this">1. Reproducibility (can someone rerun this?)<a class="anchor" aria-label="anchor" href="#reproducibility-can-someone-rerun-this"></a></h3>
+<ul class="task-list"><li><label><input type="checkbox">I can rerun my own main result
+today</label></li>
+<li><label><input type="checkbox">Code is versioned (e.g. Git, tagged
+release)</label></li>
+<li><label><input type="checkbox">Randomness is fixed or recorded
+(seeds noted)</label></li>
+<li><label><input type="checkbox">Train / validation / test splits are
+explicit</label></li>
+<li><label><input type="checkbox">Preprocessing steps are
+documented</label></li>
+<li><label><input type="checkbox">Software environment is described
+(versions or environment file)</label></li>
+</ul><p>Minimum goal: someone else could rerun this without guessing.</p>
+</div>
+<div class="section level3">
+<h3 id="data-provenance-where-did-this-come-from">2. Data provenance (where did this come from?)<a class="anchor" aria-label="anchor" href="#data-provenance-where-did-this-come-from"></a></h3>
+<ul class="task-list"><li><label><input type="checkbox">Data source is stated (archive,
+survey, release)</label></li>
+<li><label><input type="checkbox">Selection criteria are
+described</label></li>
+<li><label><input type="checkbox">Any filtering or exclusions are
+documented</label></li>
+<li><label><input type="checkbox">Derived features are
+explained</label></li>
+<li><label><input type="checkbox">Labels or annotations are
+described</label></li>
+</ul><p>Minimum goal: a reader understands what data went in, and why.</p>
+</div>
+<div class="section level3">
+<h3 id="fair-practices-is-this-reusable">3. FAIR practices (is this reusable?)<a class="anchor" aria-label="anchor" href="#fair-practices-is-this-reusable"></a></h3>
+<p>Findable</p>
+<ul class="task-list"><li><label><input type="checkbox">Outputs are named
+clearly</label></li>
+<li><label><input type="checkbox">A README explains what is in the
+repository</label></li>
+</ul><p>Accessible</p>
+<ul class="task-list"><li><label><input type="checkbox">Access conditions are stated (open,
+restricted, embargoed)</label></li>
+<li><label><input type="checkbox">Instructions for access are included
+if needed</label></li>
+</ul><p>Interoperable</p>
+<ul class="task-list"><li><label><input type="checkbox">Standard formats are used where
+possible</label></li>
+<li><label><input type="checkbox">Units and conventions are
+stated</label></li>
+</ul><p>Reusable</p>
+<ul class="task-list"><li><label><input type="checkbox">A short description of intended use
+is included</label></li>
+<li><label><input type="checkbox">Limitations are stated
+explicitly</label></li>
+</ul><p>Minimum goal: reuse does not require emailing you.</p>
+</div>
+<div class="section level3">
+<h3 id="models-and-outputs-what-exactly-is-being-shared">4. Models and outputs (what exactly is being shared?)<a class="anchor" aria-label="anchor" href="#models-and-outputs-what-exactly-is-being-shared"></a></h3>
+<ul class="task-list"><li><label><input type="checkbox">Training data are
+described</label></li>
+<li><label><input type="checkbox">Preprocessing assumptions are
+stated</label></li>
+<li><label><input type="checkbox">Intended scope of the model is
+documented</label></li>
+<li><label><input type="checkbox">Known failure modes are
+listed</label></li>
+<li><label><input type="checkbox">Outputs include uncertainty where
+relevant</label></li>
+</ul><p>Minimum goal: users know what the model was built for.</p>
+</div>
+<div class="section level3">
+<h3 id="ethical-safeguards-are-assumptions-visible">5. Ethical safeguards (are assumptions visible?)<a class="anchor" aria-label="anchor" href="#ethical-safeguards-are-assumptions-visible"></a></h3>
+<ul class="task-list"><li><label><input type="checkbox">Model scope is stated
+clearly</label></li>
+<li><label><input type="checkbox">“Not tested on” cases are
+listed</label></li>
+<li><label><input type="checkbox">Performance claims are not
+overgeneralised</label></li>
+<li><label><input type="checkbox">Automation is not treated as ground
+truth</label></li>
+<li><label><input type="checkbox">Language avoids implied
+universality</label></li>
+</ul><p>Minimum goal: downstream users are not misled by omission.</p>
+</div>
+<div class="section level3">
+<h3 id="the-fiveminute-test">6. The five‑minute test<a class="anchor" aria-label="anchor" href="#the-fiveminute-test"></a></h3>
+<p>If you stopped working on this today:</p>
+<ul class="task-list"><li><label><input type="checkbox">Could you explain the project in one
+page?</label></li>
+<li><label><input type="checkbox">Could someone rerun the main
+figure?</label></li>
+<li><label><input type="checkbox">Would limitations still be
+obvious?</label></li>
+</ul><p>If not, write one sentence to fix that.</p>
+</div>
+<div class="section level3">
+<h3 id="remember">Remember<a class="anchor" aria-label="anchor" href="#remember"></a></h3>
+<ul><li>Clarity beats completeness</li>
+<li>Partial reproducibility beats silence</li>
+<li>Small improvements compound</li>
+</ul><p>You are not aiming for perfect practice.<br>
+You are aiming for fewer mysteries.</p>
+</div>
+</section><section><h2 class="section-heading" id="wrapup-and-next-steps">Wrap‑up and next steps<a class="anchor" aria-label="anchor" href="#wrapup-and-next-steps"></a></h2>
+<hr class="half-width"><p>This workshop has focused on a simple idea:</p>
+<p>Machine learning does not change what good astronomy looks
+like.<br>
+It changes how easy it is to lose track of assumptions.</p>
+<p>Across the lessons, we have seen that:</p>
+<ul><li>reproducibility is a practical skill, not a moral stance</li>
+<li>FAIR practices extend beyond raw data to models and workflows</li>
+<li>ethical issues in astronomy ML are usually about scope and
+reuse</li>
+<li>small, explicit choices prevent large downstream problems</li>
+</ul><p>None of these require perfect code or ideal infrastructure. They
+require clarity.</p>
+<div class="section level3">
+<h3 id="what-you-should-take-away">What you should take away<a class="anchor" aria-label="anchor" href="#what-you-should-take-away"></a></h3>
+<p>If you remember only a few things:</p>
+<ul><li>You are the primary user of your own ML work</li>
+<li>Performance numbers are not self‑explanatory</li>
+<li>Models outlive their context unless you stop them</li>
+<li>Silence about limitations is never neutral</li>
+</ul><p>Good practice is mostly about writing things down.</p>
+</div>
+<div class="section level3">
+<h3 id="what-to-do-next-practical-and-realistic">What to do next (practical and realistic)<a class="anchor" aria-label="anchor" href="#what-to-do-next-practical-and-realistic"></a></h3>
+<p>After this workshop, consider doing just one of the following:</p>
+<ul><li>Add a README to an existing project</li>
+<li>Write a scope and limitations paragraph for a paper</li>
+<li>Fix and record random seeds</li>
+<li>Document a preprocessing step you currently do implicitly</li>
+<li>Add a “not tested on” note to a model description</li>
+</ul><p>Choose one thing. Do it once. Let it stick.</p>
+</div>
+<div class="section level3">
+<h3 id="how-this-fits-into-your-career">How this fits into your career<a class="anchor" aria-label="anchor" href="#how-this-fits-into-your-career"></a></h3>
+<p>For PhD students and ECRs especially:</p>
+<ul><li>reproducible work is easier to defend</li>
+<li>clear documentation saves time</li>
+<li>careful scope statements protect you from overclaiming</li>
+<li>FAIR practices increase the lifespan of your work</li>
+</ul><p>These benefits show up quickly.</p>
+<div id="final-reflection-optional" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<span class="callout-header">Discussion</span>
+<div id="final-reflection-optional" class="callout-inner">
+<h3 class="callout-title">Final reflection (optional)</h3>
+<div class="callout-content">
+<p>Take one minute and think about:</p>
+<ul><li>One assumption in your current work that could be made explicit</li>
+<li>One future reader you could help with a single sentence</li>
+</ul><p>That is enough for today.</p>
+</div>
+</div>
+</div>
+<p>Final Thought: <strong>Reproducible and ethical ML is not about doing
+more work. It is about making your work easier to trust and
+reuse.</strong> <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- --></div>
+ --></p>
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/takeaways.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
@@ -419,8 +581,8 @@ any links that you are not going to use.
   "url": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/wrap-up.html",
   "identifier": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/instructor/wrap-up.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-03-05",
-  "datePublished": "2026-03-06"
+  "dateModified": "2026-03-10",
+  "datePublished": "2026-03-10"
 }
 
   </script><script>

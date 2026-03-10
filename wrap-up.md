@@ -6,8 +6,8 @@ exercises: 5 # exercise time in minutes
 
 ## One‑page checklist: Reproducible, FAIR, and ethical ML in astronomy
 
-Use this as a quick self‑check for your next ML project.  
-You do not need to tick every box to start.  
+Use this as a quick self‑check for your next ML project.
+You do not need to tick every box to start.
 Ticking a few is already progress.
 
 
@@ -131,7 +131,7 @@ If you remember only a few things:
 Good practice is mostly about writing things down.
 
 
-### What to do next (practical and realistic)
+### What to do next
 
 After this workshop, consider doing just one of the following:
 

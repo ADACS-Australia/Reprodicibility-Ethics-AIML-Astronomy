@@ -23,12 +23,11 @@ This workshop assumes that participants:
 - have some exposure to machine learning or AI methods, either through use or collaboration
 - have experience working with real survey or simulation data
 
-No prior knowledge of:
+We assume no prior knowledge of:
+
 - formal research ethics frameworks
 - FAIR data principles
 - software engineering best practices
-
-is assumed.
 
 The workshop does **not** teach:
 
@@ -62,4 +61,4 @@ By the end of the workshop, participants should be able to:
 
 You should leave with a clearer sense of what is reasonable to do now, and what can be improved incrementally over time.
 
-**This workshop is not about doing everything right. It is about making ML‑based astronomy easier to trust, reuse, and understand.**"**
+**This workshop is not about doing everything right. It is about making ML‑based astronomy easier to trust, reuse, and understand.**

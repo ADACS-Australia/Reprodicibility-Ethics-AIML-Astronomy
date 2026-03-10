@@ -187,4 +187,3 @@ Progress is incremental.
 - Small improvements compound over time
 
 Remember: **Good (ML) practice is not about doing everything right. It is about making fewer things mysterious.**
-``

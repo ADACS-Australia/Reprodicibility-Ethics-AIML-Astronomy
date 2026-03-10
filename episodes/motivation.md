@@ -38,9 +38,7 @@ PhDs and ECRs are usually evaluated on:
 - finishing projects on time
 - surviving supervisor or project changes
 
-So let’s reframe the question.
-
-**What does reproducibility do for *you*, right now?**
+So let’s reframe the question: **What does reproducibility do for *you*, right now?**
 
 
 ### Selfish reason #1: Reproducibility saves *you* time

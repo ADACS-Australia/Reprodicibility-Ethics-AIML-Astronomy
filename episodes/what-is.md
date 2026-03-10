@@ -1,5 +1,5 @@
 ---
-title: "Wat do we mean by reproducibility?"
+title: "What do we mean by reproducibility?"
 teaching: 15 # teaching time in minutes
 exercises: 10 # exercise time in minutes
 ---
@@ -151,6 +151,7 @@ That is to say, model performance (correlation of output to "known" results) is 
 This is the classic correlation vs causation confusion.
 
 However, large‑scale reviews have shown that:
+
 - subtle methodological errors such as data leakage are widespread, leading to an over-reporting of model performance
 - claimed improvements often disappear when analyses are reproduced correctly (e.g [Kapoor and Narayanan, 2023](https://doi.org/10.1016/j.patter.2023.100804))
 

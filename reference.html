@@ -223,7 +223,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="what-is.html">2. Wat do we mean by reproducibility?</a>
+        <a href="what-is.html">2. What do we mean by reproducibility?</a>
     </div><!--/div.accordion-header-->
 
   </div><!--/div.accordion-item-->
@@ -323,9 +323,9 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Reference</h1>
-        <p>Last updated on 2026-03-05 |
+        <p>Last updated on 2026-03-10 |
 
-        <a href="https://github.com/ADACS-aus/Reprodicibility-Ethics-AIML-Astronomy/edit/main/learners/reference.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <a href="https://github.com/ADACS-australia/Reprodicibility-Ethics-AIML-Astronomy/edit/main/learners/reference.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
 
 
@@ -335,12 +335,164 @@
 
         
 <section><h2 class="section-heading" id="glossary">Glossary<a class="anchor" aria-label="anchor" href="#glossary"></a></h2>
-<hr class="half-width"><p>This is a placeholder file. Please add content here.</p>
-<!--
+<hr class="half-width"><dl><dt><strong>Accessible</strong></dt>
+<dd>
+A FAIR principle stating that data and metadata should be retrievable
+using standardized, open protocols, with clear information about
+authentication or authorization where required.
+</dd>
+<dt><strong>Automation bias</strong></dt>
+<dd>
+The tendency to over‑trust outputs from automated systems and discount
+contradictory evidence, even when the automation is wrong.
+</dd>
+<dt><strong>Data provenance</strong></dt>
+<dd>
+Information describing the origin of data, including how it was
+collected, processed, filtered, and transformed.
+</dd>
+<dt><strong>Downstream reuse</strong></dt>
+<dd>
+The use of data, models, or catalogues by others after publication.
+</dd>
+<dt><strong>Errors of commission (automation bias)</strong></dt>
+<dd>
+Failures caused by blindly following an automated recommendation without
+independent verification.
+</dd>
+<dt><strong>Errors of omission (automation bias)</strong></dt>
+<dd>
+Failures to notice or act when an automated system produces no warning,
+leading users to assume everything is correct.
+</dd>
+<dt><strong>FAIR</strong></dt>
+<dd>
+An acronym for Findable, Accessible, Interoperable, Reusable. FAIR
+refers to a set of guiding principles for scientific data management and
+stewardship, focused on enabling reuse by both humans and machines.
+</dd>
+<dt><strong>Findable</strong></dt>
+<dd>
+A FAIR principle stating that data and metadata should have globally
+unique, persistent identifiers and be indexed in searchable resources so
+they can be discovered.
+</dd>
+<dt><strong>Interoperable</strong></dt>
+<dd>
+A FAIR principle stating that data and metadata should use shared
+formats, vocabularies, and standards that allow integration with other
+datasets and tools.
+</dd>
+<dt><strong>Machine‑actionable</strong></dt>
+<dd>
+A property of data or metadata that allows computational systems to
+automatically find, access, and use research outputs with minimal human
+intervention.
+</dd>
+<dt><strong>Machine‑learning model</strong></dt>
+<dd>
+A computational model trained on data to perform tasks such as
+classification, regression, or prediction.
+</dd>
+<dt><strong>Metadata</strong></dt>
+<dd>
+Structured information that describes data, models, or workflows, such
+as units, formats, coordinate systems, data sources, and processing
+history.
+</dd>
+<dt><strong>Model artefact</strong></dt>
+<dd>
+Any output of an ML workflow that may be reused, including trained
+models, derived features, labels, catalogues, or evaluation results.
+</dd>
+<dt><strong>Model scope</strong></dt>
+<dd>
+The range of data, conditions, or scientific contexts for which a model
+was designed and evaluated.
+</dd>
+<dt><strong>Overclaiming</strong></dt>
+<dd>
+Making scientific claims that extend beyond what the evidence supports,
+often by implying generality from limited ML performance results.
+</dd>
+<dt><strong>Partial reproducibility</strong></dt>
+<dd>
+A situation in which some, but not all, components of a study can be
+reproduced. Partial reproducibility is common and preferable to
+undocumented irreproducibility.
+</dd>
+<dt><strong>Performance claim</strong></dt>
+<dd>
+An interpretation or scientific conclusion drawn from a performance
+metric. Overclaiming occurs when performance is assumed to imply general
+validity or physical understanding.
+</dd>
+<dt><strong>Performance metric</strong></dt>
+<dd>
+A quantitative measure used to evaluate a model, such as accuracy,
+precision, recall, RMSE, or AUC.
+</dd>
+<dt><strong>Repeatability</strong></dt>
+<dd>
+The ability for the original researcher to rerun their own analysis
+under the same conditions and obtain the same results. This is the
+minimum requirement for any computational result.
+</dd>
+<dt><strong>Replicability</strong></dt>
+<dd>
+The ability to obtain consistent scientific conclusions using new data
+or an independent method while addressing the same scientific question.
+Replication tests robustness, not computational correctness.
+</dd>
+<dt><strong>Reproducibility</strong></dt>
+<dd>
+The ability for the same results to be obtained using the same data,
+code, methods, and analysis conditions. In ML‑based astronomy, this
+usually means that another researcher can rerun the original workflow
+and obtain identical outputs.
+</dd>
+<dt><strong>Reproducible workflow</strong></dt>
+<dd>
+A documented sequence of data processing, analysis, and modeling steps
+that can be rerun to reproduce results.
+</dd>
+<dt><strong>Reusable</strong></dt>
+<dd>
+A FAIR principle stating that data and metadata should be richly
+described, include provenance, and have clear usage licenses so they can
+be reused in future research.
+</dd>
+<dt><strong>Scientific responsibility (in ML)</strong></dt>
+<dd>
+The obligation to clearly state assumptions, limitations, and intended
+use of ML‑based results so others can interpret and reuse them
+appropriately.
+</dd>
+<dt><strong>Scope creep</strong></dt>
+<dd>
+The gradual reuse of a model beyond its original intended domain without
+explicit re‑evaluation or validation.
+</dd>
+<dt><strong>Test data</strong></dt>
+<dd>
+A held‑out dataset used to evaluate model performance after training and
+model selection are complete.
+</dd>
+<dt><strong>Training data</strong></dt>
+<dd>
+The dataset used to fit a machine‑learning model. The properties of the
+training data constrain what the model can learn and where it can be
+applied.
+</dd>
+<dt><strong>Validation data</strong></dt>
+<dd>
+A dataset used during model development to tune parameters or select
+models, but not used to train them directly.
+</dd>
+</dl><!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
-</section></div> <!-- / div.lesson-content -->
+ --></section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -364,11 +516,11 @@ any links that you are not going to use.
         <p>This lesson is subject to the <a href="CODE_OF_CONDUCT.html">Code of Conduct</a></p>
         <p>
 
-        <a href="https://github.com/ADACS-aus/Reprodicibility-Ethics-AIML-Astronomy/edit/main/learners/reference.md" class="external-link">Edit on GitHub</a>
+        <a href="https://github.com/ADACS-australia/Reprodicibility-Ethics-AIML-Astronomy/edit/main/learners/reference.md" class="external-link">Edit on GitHub</a>
 
 	
-        | <a href="https://github.com/ADACS-aus/Reprodicibility-Ethics-AIML-Astronomy/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
-        | <a href="https://github.com/ADACS-aus/Reprodicibility-Ethics-AIML-Astronomy/" class="external-link">Source</a></p>
+        | <a href="https://github.com/ADACS-australia/Reprodicibility-Ethics-AIML-Astronomy/blob/main/CONTRIBUTING.md" class="external-link">Contributing</a>
+        | <a href="https://github.com/ADACS-australia/Reprodicibility-Ethics-AIML-Astronomy/" class="external-link">Source</a></p>
         <p>
         <a href="citation.html">Cite</a>
         | <a href="mailto:paul.hancock@curtin.edu.au">Contact</a> | <a href="https://carpentries.org/about/" class="external-link">About</a></p>
@@ -393,17 +545,17 @@ any links that you are not going to use.
     {
   "@context": "https://schema.org",
   "@type": "LearningResource",
-  "@id": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/reference.html",
+  "@id": "https://ADACS-australia.github.io/Reprodicibility-Ethics-AIML-Astronomy/reference.html",
   "inLanguage": "en",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
   "keywords": "reproducibility, ethics, machine learning, artificial intelligence, astronomy",
   "name": "Reference",
   "creativeWorkStatus": "active",
-  "url": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/reference.html",
-  "identifier": "https://ADACS-aus.github.io/Reprodicibility-Ethics-AIML-Astronomy/reference.html",
+  "url": "https://ADACS-australia.github.io/Reprodicibility-Ethics-AIML-Astronomy/reference.html",
+  "identifier": "https://ADACS-australia.github.io/Reprodicibility-Ethics-AIML-Astronomy/reference.html",
   "dateCreated": "2026-03-05",
-  "dateModified": "2026-03-05",
+  "dateModified": "2026-03-10",
   "datePublished": "2026-03-10"
 }
 
